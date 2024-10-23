@@ -9,7 +9,7 @@ At first we were trying to implement the semantic segmentation model from from s
 But because we did not have the masks for the data we decided to use the yolo classification model which actually has to be fitted on more waste data and also more linear layers added to it such as to support the 3 classes that we are supporting in the [raspberry pi driver file](https://github.com/timothy-voiuhy/WasteClassification/blob/main/rasp_driver.py)
 
 ## Classifier Code on Colab (copy and paste in browser)
-[https://drive.google.com/file/d/1D5L-mim4VlHH8-WiG5mv0BwCN9kdT4S6/view?usp=sharing](https://drive.google.com/file/d1D5L-mim4VlHH8-WiG5mv0BwCN9kdT4S6/view?usp=sharing)
+[https://drive.google.com/file/d1D5L-mim4VlHH8-WiG5mv0BwCN9kdT4S6/view?usp=sharing](https://drive.google.com/file/d1D5L-mim4VlHH8-WiG5mv0BwCN9kdT4S6/view?usp=sharing)
 
 ## Hardware 
 At fisrt we implemented the code for an [arduino board](https://github.com/timothy-voiuhy/WasteClassification/blob/main/arduino-logic.cpp) but it turned out the board we had targeted had no the computing resources to actually handle the yolo model and so we rewrote the hardware control file in python which can actually run on a raspberry pi 4 with 4GB of ram.
